@@ -75,3 +75,9 @@ Migrating to CreateStudents (20201228215338)
   [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "students" ("last_name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["last_name", "the Impaler"], ["created_at", "2020-12-28 22:06:41.811255"], ["updated_at", "2020-12-28 22:06:41.811255"]]
   [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
   [1m[36mStudent Load (1.9ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Ernst"], ["last_name", "Von Dohnanyi"], ["created_at", "2020-12-28 22:16:49.445763"], ["updated_at", "2020-12-28 22:16:49.445763"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mStudent Load (1.4ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT  "students".* FROM "students" ORDER BY "students"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
